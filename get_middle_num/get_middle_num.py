@@ -19,10 +19,10 @@ def get_mid(a,b):
             imax = i - 1
         # i正合适
         else:
-            #到a的最小元素了，则左侧最大值为b的左侧最大值
+            #到a的最小元素了，则左侧最大值为b的左侧最大值b[j-1]
             if i == 0: 
-               max_left  
-            #到b的最小元素了，则左侧最大值为a的左侧最大值= b[j-1]
+               max_left = b[j-1] 
+            #到b的最小元素了，则左侧最大值为a的左侧最大值a[i-1]
             elif j == 0:
                max_left = a[i-1]
             else:
