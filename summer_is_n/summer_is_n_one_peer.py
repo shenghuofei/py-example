@@ -4,10 +4,10 @@ def get_one_peer(nums, target):
     to_map = {}
     length = len(nums)
     for i in range(length):
-        to_map[nums[i]] = i
         for_peer = target - nums[i]
         if for_peer in to_map:
             return to_map[for_peer],i
+        to_map[nums[i]] = i
     else:
         return None
 
